@@ -10,15 +10,19 @@ export const userModel = sequelize.define('User', {
         allowNull: false,
         unique: true
     },
+    confirmemail: {
+        type: DataTypes.BOOLEAN,
+        // allowNull: false,
+        defaultValue:false
+    },
     password: {
         type: DataTypes.STRING(100),
         allowNull: false
     },
     phone: {
         type: DataTypes.STRING(11)
-    },
-    confirmEmail: {
-        type: DataTypes.BOOLEAN,
-        defaultValue: false
+    }, 
+    age:{
+        type:DataTypes.INTEGER
     }
 })

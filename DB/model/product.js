@@ -1,7 +1,7 @@
 
 import { sequelize } from "../connection.js";
 import { DataTypes } from 'sequelize'
-export const productModel  = sequelize.define("Product", {
+export let productModel  = sequelize.define("Product", {
 
     name:{
         type:DataTypes.STRING(100) ,//255,
